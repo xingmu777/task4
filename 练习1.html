@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" style="display: block;text-align: center;">首页</a>
+</body>
+<script>
+    var momeny = prompt("输入余额：");
+    var num = prompt("输入购买数量：");
+    alert("应找钱："+find(num,momeny));
+    function find(a,b) {
+        var res = b-a*5;
+        return res;
+    }
+</script>
+</html>

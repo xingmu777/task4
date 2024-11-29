@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" style="display: block;text-align: center;">首页</a>
+</body>
+<script>
+    var num = prompt("输入数字：");
+    alert("取整后："+getRound(num));
+    function getRound(num) {
+        if (num < 0) {
+            if (num%1 !== 0){
+                return (num+num%1+1);
+            } else return num;
+        }else {
+            if (num%1 !== 0){
+                return (num-num%1+1);
+            } else return num;
+        }
+    }
+</script>
+</html>
