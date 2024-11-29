@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" style="display: block;text-align: center;">首页</a>
+</body>
+<script>
+    alert("请打开控制台◔ ‸◔?");
+    var a =[2,6,1,77,52,25,7];
+    console.log("直接查找最大值为："+getMax(a)+" 排序查找最大值为："+getSort(a));
+    
+    function getMax(a) {
+        var max = a[0];
+        for(var i=1;i<a.length;i++) {
+            if(max<=a[i]) {
+                max=a[i];
+            }
+        }
+        return max;
+    }
+    function getSort(a) {
+        var m = 0;
+        for(var i=0;i<a.length;i++) {
+            for(var j=i;j<a.length;j++) {
+                if(a[i]>a[j]) {
+                    m=a[i];
+                    a[i]=a[j];
+                    a[j]=m;
+                }
+            }
+        }
+        return a[a.length-1];
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" style="display: block;text-align: center;">首页</a>
+</body>
+<script>
+    alert("请打开控制台o(>﹏<)o");
+    var a = ['red', 'green', 'blue', 'yellow', 'purple'];
+    var b = [];
+    console.log("循环反过来的新数组b：");
+    console.log(getFlip_Newarr(a,b));
+    console.log("reverse反过来的数组a：");
+    console.log(getFlip_arr(a));
+
+    function getFlip_Newarr(a,b) {
+        for(var i=a.length-1;i>=0;i--) {
+            b.push(a[i]);
+        }
+        return b;
+    }
+    function getFlip_arr(a) {
+        a=a.reverse();
+        return a;
+    }
+</script>
+</html>

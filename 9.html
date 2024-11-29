@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" style="display: block;text-align: center;">首页</a>
+</body>
+<script>
+    var a=prompt("请输入数组（例：1,2,3,4）：");
+    var b=a.split(",");
+    console.log("判断数组中是否存在一个数字大于0");
+    console.log(getJudge_zero(b));
+    alert("请打开控制台(ノಠ益ಠ)ノ彡┻━┻");
+
+    function getJudge_zero(b) {
+        var is = false;
+        for(var i=0;i<b.length;i++) {
+            if(Number(b[i]) > 0) {
+                is=true;
+                break;
+            }
+        }
+        if(is){
+            return "数组中有大于0的";
+        } else return "NO";
+    }
+</script>
+</html>
